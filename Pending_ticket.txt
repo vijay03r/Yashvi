@@ -1,0 +1,10 @@
+34071 and 34121
+
+ICICI prodential value discovery fund
+
+Nippon india multi cap (or) small cap
+
+
+update blob_encounter b, temp_enc_hum_blob_r e, blob_human h set b.human_xml=h.human_xml 
+where b.encounter_id=e.encounter_id and e.human_id=h.human_id and 
+e.encounter_id in (select encounter_id from temp_enc_hum_blob_r where encounter_id between 3404000 and 3414000);
